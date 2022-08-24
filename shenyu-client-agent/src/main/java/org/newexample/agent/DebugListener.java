@@ -1,10 +1,10 @@
-package org.example.agent;
+package org.newexample.agent;
 
 import net.bytebuddy.agent.builder.AgentBuilder;
 import net.bytebuddy.description.type.TypeDescription;
 import net.bytebuddy.dynamic.DynamicType;
 import net.bytebuddy.utility.JavaModule;
-import org.example.agent.log.WeavingClassLog;
+import org.newexample.agent.log.WeavingClassLog;
 
 /**
  * @author zhengpeng

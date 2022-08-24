@@ -105,8 +105,8 @@
         <configuration>
           <archive>
             <manifestEntries>
-              <Premain-Class>org.example.agent.AppAgent</Premain-Class>
-              <Agent-Class>org.example.agent.AppAgent</Agent-Class>
+              <Premain-Class>org.newexample.agent.AppAgent</Premain-Class>
+              <Agent-Class>org.newexample.agent.AppAgent</Agent-Class>
               <Can-Redefine-Classes>true</Can-Redefine-Classes>
               <Can-Retransform-Classes>true</Can-Retransform-Classes>
               <Can-Set-Native-Method-Prefix>true</Can-Set-Native-Method-Prefix>

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.example.agent.bean;
+package org.newexample.agent.bean;
 
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;

@@ -1,4 +1,4 @@
-package org.example.agent.log;
+package org.newexample.agent.log;
 
 import net.bytebuddy.description.type.TypeDescription;
 import net.bytebuddy.dynamic.DynamicType;

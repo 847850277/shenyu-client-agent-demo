@@ -1,8 +1,8 @@
-package org.example.agent.interceptor;
+package org.newexample.agent.interceptor;
 
 import net.bytebuddy.asm.Advice;
 import net.bytebuddy.implementation.bytecode.assign.Assigner;
-import org.example.agent.bean.SpringCloudClientEventListener;
+import org.newexample.agent.bean.SpringCloudClientEventListener;
 
 /**
  * @author zhengpeng

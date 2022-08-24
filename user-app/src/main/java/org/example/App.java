@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Hello world!
  *
  */
-@SpringBootApplication
+//@SpringBootApplication(scanBasePackages = {"org.example"})
+@SpringBootApplication(scanBasePackages = {"org.example"})
 public class App {
 
     public static void main( String[] args ) {
