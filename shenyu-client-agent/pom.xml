@@ -58,10 +58,41 @@
     </dependency>
 
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-autoconfigure</artifactId>
-      <version>2.6.8</version>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>5.3.20</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>5.3.20</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>5.3.20</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aop</artifactId>
+      <version>5.3.20</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-expression</artifactId>
+      <version>5.3.20</version>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.2</version>
+    </dependency>
+
 
   </dependencies>
 
@@ -83,7 +114,40 @@
           </archive>
         </configuration>
       </plugin>
+
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <artifactSet>
+            <includes>
+              <include>javassist:javassist:jar:</include>
+              <include>net.bytebuddy:byte-buddy:jar:</include>
+              <include>net.bytebuddy:byte-buddy-agent:jar:</include>
+              <include>org.springframework:spring-core:jar:</include>
+              <include>org.springframework:spring-context:jar:</include>
+              <include>org.springframework:spring-beans:jar:</include>
+              <include>org.springframework:spring-aop:jar:</include>
+              <include>org.springframework:spring-expression:jar:</include>
+              <include>commons-logging:commons-logging:jar:</include>
+            </includes>
+          </artifactSet>
+        </configuration>
+      </plugin>
+
     </plugins>
+
+
+
   </build>
 
 </project>
